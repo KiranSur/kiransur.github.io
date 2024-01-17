@@ -12,6 +12,18 @@ p {
   line-height: 1.5;
 }
 
+.p-intro {
+  color: #333;
+  line-height: 1.5;
+  margin-left: $space-4;
+  margin-right: $space-4;
+  margin-top: $space-2;
+}
+
+br {
+  line-height: $space-4;
+}
+
 small,
 .small {
   font-size: 0.707rem;

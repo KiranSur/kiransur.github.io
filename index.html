@@ -1,34 +1,56 @@
 ---
 layout: default
+title: Home
+tags: home
 ---
-{% assign posts_count = paginator.posts | size %}
 
 <div class="home">
-  {% if posts_count > 0 %}
-    <div class="posts">
-      {% for post in paginator.posts %}
-        <div class="post py3">
-          <p class="post-meta">
-	    {% if site.date_format %}
-	      {{ post.date | date: site.date_format }}
-	    {% else %}
-	      {{ post.date | date: "%b %-d, %Y" }}
-	    {% endif %}
-	  </p>
-          <a href="{{ post.url | relative_url }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-          <span class="post-summary">
-            {% if post.summary %}
-              {{ post.summary }}
-            {% else %}
-              {{ post.excerpt }}
-            {% endif %}
-          </span>
-        </div>
-      {% endfor %}
-    </div>
 
-    {% include pagination.html %}
-  {% else %}
-    <h1 class='center'>{{ site.text.index.coming_soon }}</h1>
-  {% endif %}
+    <p class="p-intro">
+
+        Hi! I'm <b>Kiran</b>,
+
+        <br>
+        <br>
+        
+        a <span style="text-decoration: underline; text-decoration-color: pink;">software engineer</span>
+        interested in distributed computing and ml infrastructure,
+
+        <br>
+        <br>
+
+        a <span style="text-decoration: underline; text-decoration-color: lightblue;">student</span>
+        at UC Berkeley studying computer science and math,
+
+        <br>
+        <br>
+
+        and an <span style="text-decoration: underline; text-decoration-color: lightgreen;">avid reader</span>
+        and
+        <span style="text-decoration: underline; text-decoration-color: lightcoral;">aspiring author</span>
+        (check out my stuff above!)
+
+        <br>
+        <br>
+        
+        <span style="text-decoration: underline; text-decoration-color: lightsalmon;">currently,</span>
+        I'm doing ml research in character animation at a stealth startup
+
+        <br>
+        <br>
+        
+        <span style="text-decoration: underline; text-decoration-color: lightseagreen;">previously,</span>
+        I've worked on efficient batch processing at Amazon and device security at 
+        Acist Medical Systems        
+        
+    </p>
+
+    <a href="https://www.linkedin.com/in/kiransuresh1/" target="_blank" rel="noopener noreferrer" style="margin-left: 4rem; background-image: none;">
+        <img src="images/linkedin.svg" height="30em" width="30em">
+    </a>
+
+    <a href="https://github.com/KiranSur" target="_blank" rel="noopener noreferrer" style="margin-left: 0.5rem; background-image: none;">
+        <img src="images/github.svg" height="30em" width="30em">
+    </a>
+
 </div>

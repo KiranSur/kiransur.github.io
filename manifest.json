@@ -7,12 +7,12 @@ layout: null
   "description": "{{ site.description | replace: '"', '\"' }}",
   "icons": [
     {
-      "src": "{{ '/splash-512x512.png' | relative_url }}",
+      "src": "{{ '/android-chrome-512x512.png' | relative_url }}",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "{{ '/favicon-192x192.png' | relative_url }}",
+      "src": "{{ '/android-chrome-192x192.png' | relative_url }}",
       "type": "image/png",
       "sizes": "192x192"
     }

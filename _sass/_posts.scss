@@ -16,8 +16,12 @@
 
 .post-link .post-title {
   margin-top: 0;
-  font-weight: 600;
+  font-weight: 500;
   color: #333;
+}
+
+.post-summary {
+  font-size: 0.8rem;
 }
 
 .post-footer {
@@ -39,7 +43,7 @@
   font-weight: 300;
   margin: 0;
   padding: .25em 0;
-  color: #7a7a7a;
+  color: rgb(205, 81, 81);
   font-style: italic;
 }
 

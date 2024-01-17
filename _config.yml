@@ -1,14 +1,17 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+title:       Kiran
+email:       kirans@berkeley.edu
+author:      Kiran Suresh
+description: "Kiran's Personal Website"
 baseurl:     ""
-url:         "https://pixyll.com"
+url:         "https://kiransur.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
- - about.md
- - contact.html
+ - index.html
+ - writing/index.html
+ - projects.md
+
+
 
 # Google services
 google_verification:
@@ -114,8 +117,9 @@ text:
 markdown:     kramdown
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
-permalink:    pretty
+permalink:    none
 paginate:     4
+paginate_path: "/writing/page:num/"
 sass:
   style: compressed
 plugins:
